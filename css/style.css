@@ -29,7 +29,7 @@ main {
   border-bottom: 5px solid #ffd034;
   border-top: 5px solid #ffd034;
 }
-header {
+header { 
   color: white;
   text-transform: uppercase;
   font-weight: normal;
@@ -39,6 +39,32 @@ header {
   align-items: center;
   gap: 1rem;
 }
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  flex-flow: row-wrap;
+  border: solid 10px blue;
+}
+nav ul {
+  list-style-type: none;
+ border: 10px solid red;
+}
+li {
+  text-decoration: none;
+}
 h1 {
   font-weight: 300;
+}
+.parent1 {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+.parent2 {
+  grid-template-columns: 1fr;
+
 }
