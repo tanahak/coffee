@@ -33,6 +33,10 @@ body {
   --Light-Blue: #cadbf8;
   --radius: 25px;
 }
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 main {
   background-color: var(--White);
   border-bottom: 5px solid var(--Sunglow);
@@ -81,7 +85,6 @@ h1 {
   font-size: 3rem;
   line-height: 1.1667;
   font-weight: 300;
-  text-transform: uppercase;
   margin: 0;
 }
 h2 {
@@ -120,11 +123,10 @@ h3 {
   height: 350px
   gap: 3rem;
 }
-.img-card {
+.img-card, .img-carda {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 2rem;
   background-color: white;
   align-items: center;
   min-height: 400px}
@@ -138,7 +140,6 @@ h3 {
 p {
   display: block;
   padding: 0 auto;
-  margin: 3rem;
 
 }
 
@@ -151,9 +152,9 @@ p {
 
 
 .top {
-  width: 100%;
-  height: 350px; /* Constrain the image height */
-  object-fit: cover;
+  /* width: 100%;
+  height: 350px; 
+  object-fit: cover; */
   border-radius: 1px;
 }
 
@@ -161,7 +162,6 @@ p {
 .parent2 {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
   background-color: var(--Light-Blue);
   align-items: start;
   padding: 3rem 2rem;
@@ -182,15 +182,15 @@ margin: 0 auto;
 footer {
   text-align: center;
   padding: 2rem 0;
+  color: var(--White)
 }
 
 
 
 @media (min-width: 700px) {
   .img-card {
-      grid-template-columns: 1fr 1fr; /* Tablet+: side by side */
+      grid-template-columns: 1fr 1fr; /* Tablet+: side by side  Claude assisted. My side by side layout forgot to put container inside the container. */
       gap: 2rem;
-      padding: 2rem;
       align-items: center;
   }
   main {
@@ -199,3 +199,29 @@ footer {
   .parent2 {
     grid-template-columns: 1fr 1fr;
   }
+  .leader {
+    grid-column: 1/3;
+  }
+}
+  
+
+  @media (min-width:1000px) {
+    .parent2 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  header {
+    justify-content: space-between;
+  }
+  .leader {
+    grid-column: 1/53;
+  }
+  .topa {
+    margin: 0; /* Remove any margin  note*/
+    border-radius: 0; /* Remove border radius for full edge-to-edge  Claude assisted removing margin from image*/
+  }
+  .img-carda {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+}
