@@ -1,0 +1,67 @@
+# Cannons Coffee Website
+
+## About Cannons Coffee
+Cannons Coffee is a local coffee shop established in 2014, specializing in artisan coffee beverages and creating a welcoming community space. Our motto is "Beans of Joy!" and we pride ourselves on quality espresso drinks, friendly service, and supporting local customers.
+
+## Project Overview
+This is the official website for Cannons Coffee, featuring our menu offerings, contact information, and customer engagement tools. The site showcases our signature drinks and provides easy ways for customers to connect with us.
+
+## Project Structure
+```
+cannons-coffee/
+├── index.html          # Homepage
+├── latte.html          # Coffee product page (main template)
+├── contact.html        # Contact form page
+├── login.html          # Login page
+├── css/
+│   └── style.css       # Main stylesheet
+├── images/
+│   ├── logo-nav.png    # Navigation logo
+│   ├── logo-footer.png # Footer logo
+│   ├── latte.jpg       # Latte product image
+│   └── [other images]
+└── js/
+    ├── custom-contact.js # Contact form functionality
+    └── custom-login.js   # Login page functionality
+```
+
+## Design & Styling
+- Uses existing CSS framework with classes like `.wrappera`, `.img-carda`, `.topa`
+- Logo and branding elements integrated
+- Navigation includes: Home, Coffee, About (external), Contact, Login
+- Footer with copyright and logo
+- Form elements may display inline due to existing CSS - use `<br>` tags for proper spacing
+
+## Current Status
+- HTML structure complete for main pages
+- Navigation links properly set up for internal pages
+- Contact form needs JavaScript functionality for:
+  - Form submission handling
+  - Console logging of form data
+  - Thank you message display with template literals
+  - Optional form hiding after submission
+- JavaScript files linked but need implementation
+
+## Development Notes
+- All internal links use relative paths (e.g., `contact.html`)
+- External links include `target="_blank"`
+- Form validation uses HTML5 required attributes
+- JavaScript should use modern ES6+ syntax
+- Console logging required for debugging/testing
+
+## Business Information
+- Established: 2014
+- Specialty: Artisan coffee beverages and community space
+- Target audience: Local coffee enthusiasts, remote workers, students
+- Key offerings: Espresso-based drinks, friendly atmosphere, potential employment opportunities
+
+## Contact Form Requirements
+- Purpose: Customer inquiries and potential employee applications
+- Fields: Name, Email, Phone, Comments, Coffee preference (Latte/Cappuccino/Espresso/Americano), Purpose (customer inquiry/employment interest)
+- Submit behavior: log data to console, show personalized thank you message, optionally hide form
+- Business goal: Build customer relationships and identify potential team members
+
+## Technical Constraints
+- Must work with existing CSS classes and structure
+- JavaScript files are separate and linked to specific pages
+- Maintain consistent navigation across all pages
