@@ -18,7 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Change page background
     document.body.style.background = 'linear-gradient(45deg, lime, yellow, cyan, magenta)';
     
-    // Show embedded video with autoplay
+    // Show embedded video with autoplay-  I cop
     setTimeout(() => {
         document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/GTIJU099F9I?autoplay=1&mute=0';
         document.getElementById('pickleRickVideo').style.display = 'block';
@@ -26,3 +26,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     
     console.log('PICKLE RICK LOGIN SUCCESSFUL!');
 });
+
+
+// this is a pickle rick roll. I was just kidding but let me tell you how it works. It uses variables to change the elements of the screen. 
+//I don't know why this isn't the submit process we have been doing, because it is an event listener. But this listener Is better because it allows 
+//any event so if you click enter in any fields or click submit it will catch it. If you only target the button you could lose data. 
+
+//I hope you at least laughed a little. 
+
+
